@@ -42,26 +42,27 @@ button{
     cursor: pointer;
 }
 #top-bar,#bar,#bottom-bar{  
+    display: block;
     content: '';
     width: 80%;
     height: 3px;
     background-color: var(--primary);
     margin: 0.35rem 0.2rem;
     border-radius:50px;
+    transition: all 450ms;
 }
 
-#burger.active #top-bar{
-  transform: rotate(45deg) translateY(180%) translateX(22%);
-  transition:450ms;
+#burger.bars #top-bar{
+    transform: rotate(45deg) translate(-2px, -1px);
+    transform-origin: 0px 100%;
 }
-#burger.active #bottom-bar{
-  transform: rotate(-225deg);
-  transition:450ms;
+#burger.bars #bottom-bar{
+    transform: rotate(-225deg) translate(-4px, 9px);
 }
-#burger.active #bar{
-transition:450ms;
-display: none;
+#burger.bars #bar{
+    opacity: 0;
 }
+
 
 .nav{
     width: 100%;
