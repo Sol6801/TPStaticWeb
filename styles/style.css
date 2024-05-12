@@ -7,6 +7,9 @@ a{
     text-decoration: none;
     color: aquamarine;
 }
+.main{
+    padding-top: 5rem;
+}
 #menu{
     position: fixed;
     top: 10px;
@@ -14,13 +17,13 @@ a{
     z-index: 50;
     padding: 20px;
     background-color: #918e8e;
-    color: bisque;
+    color: rgb(194, 139, 72);
     border-radius: 45%;
 }
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    min-height: 100 vh; /* es para que se vea bien en el celular considerando la barra de navegacion y botonera de abajo*/
+    min-height: 100 svh; /* es para que se vea bien en el celular considerando la barra de navegacion y botonera de abajo*/
 }
 
 .section {
@@ -72,9 +75,7 @@ body{
     bottom:0;
     left: 0;
     width: 100%;
-    -webkit-aspect-ratio: 2/1;
-    /*aspect-ratio: ;*/
-    padding: 20%;
+    padding: 5%;
     display:block;
     background-color: #443C40;
     color: white;
