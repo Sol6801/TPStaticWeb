@@ -6,20 +6,9 @@ button.addEventListener('click', () =>{
     nav.classList.toggle('active')
 })
 burger.addEventListener('click', () =>{
-    burger.classList.toggle('bars')
+    burger.classList.toggle('active')
 })
 
 
-// const closure = () =>{
-//     if (burger.classList.contains('bars')){
-//         burger.classList.remove('bars')
-//     }else{
-//     burger.classList.toggle('bars')
-//     }
-//     }
-// }
-// button.addEventListener('click', (closure) =>{
-//     burger.classList.add('bars')
-// })
 
 
