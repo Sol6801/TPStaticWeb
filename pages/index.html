@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recorriendo Argentina</title>
     <link rel="stylesheet" href="/styles/style.css">
-    <script src="/scripts/script.js"></script>
+    
     <!-- Icono -->
     <link rel="icon" type="image/png" href="/assets/icon-arg.png">
 </head>
 <body>
 
-    <div id="menu">
-        <a id="map" href="mapa.html">Mapa turistico</a>
-        <a id="juego" href="juego.html"> Juego de viaje</a>
-    </div>
+    <header class="header">
+        <div class="logo"><img src="/assets/logo2.jpg" width="100%"></div>
+        <button class="burger">
+            <div id="burger">
+                <span id="top-bar"></span>
+                <span id="bar"></span>
+                <span id="bottom-bar"></span>
+              </div>
+        </button>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="map.html">Mapa</a></li>
+                <li><a href="passport.html">Pasaporte</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="main">
         <section class="section inicio">
@@ -74,5 +87,6 @@
             </p>
         </div>
     </footer>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
