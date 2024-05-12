@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: aquamarine;
+}
+#menu{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 50;
+    padding: 20px;
+    background-color: #918e8e;
+    color: bisque;
+    border-radius: 45%;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100 vh; /* es para que se vea bien en el celular considerando la barra de navegacion y botonera de abajo*/
+}
+
+.section {
+    background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centrar la imagen */
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    color: white; /* Color de texto */
+    text-align: center; /* Alinear el texto al centro */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 8%;
+}
+
+.inicio{
+    background-image: url(/assets/imagen-inicio.png);
+}
+
+.noreste {
+        background-color: #FCAF52;
+}
+
+.cuyo{
+    background-color: #BA5624;
+}
+
+.noroeste{
+        background-color: #FFCB5A;
+}
+
+.patagonica{
+            background-color: #32AFBA;
+}
+
+.pampeana{
+        background-color: #8FD83C;
+}
+
+
+.contenido {
+    padding: 20px; 
+    background-color: #8b343480;
+    border-radius: 30%;
+}
+
+
+.footer{
+    bottom:0;
+    left: 0;
+    width: 100%;
+    -webkit-aspect-ratio: 2/1;
+    /*aspect-ratio: ;*/
+    padding: 20%;
+    display:block;
+    background-color: #443C40;
+    color: white;
+    text-align: center;
+}
+
+/* -- diseño para computadora --*/
+@media(width > 800px) and (width < 1500px)
+{   
+    .section {
+        background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
+        background-position: center; /* Centrar la imagen */
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        color: white; /* Color de texto */
+        text-align: center; /* Alinear el texto al centro */
+        display: flex;
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        padding: 8%;
+    }
+
+    .inicio{
+        background-image: url(/assets/imagen-inicio.png);
+        aspect-ratio: 16 / 9;
+    }
+
+    .cuyo{
+        background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh9aMX7G-uA6lL7lPNTyClLD7BF5ryibgCnuGZacQU3Mtsz0criQggU0kgTGnMJuKZQx2GxENwCrjVZvoF78ZTrbV426mOTAug2ojy-2hDx9Wqo5wvnuHmqJ_Z1AKQ1BymnCIqxbY3QJVs/s1600/cuyo.jpg);
+
+        .contenido{
+            background-color: #BA5624;
+        }
+    }
+    
+}
