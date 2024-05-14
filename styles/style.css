@@ -3,6 +3,7 @@
     --contrast: #edd4b2;
     --primary: #a35959;
     --hover: #641a34;
+    --highlight:#ce63a5;
 }
 /*
     --bgc: #fce2b2;
@@ -155,15 +156,17 @@ button{
     display: none;
 }
 .card{
-    padding: 1.5rem;
+    margin-bottom: 5%;
+    padding: 0.3rem;
     display: grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows:0.3fr 2fr 3fr 3fr 3fr 3fr 3fr;
+    grid-template-rows:0.3fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
     background-color: var(--bgc);
     position: absolute;
     left:10%;
-    top:20%;
+    top:18%;
     width: 80%;
+    min-width: 250px;
     box-shadow: 0 0 0 100rem #0000009c;
     transition: all .5s ease;
     gap: 5px;
@@ -172,6 +175,7 @@ button{
 h1.info{
     order:-1;
     grid-column: auto;
+    margin-top: 3%;
 }
 ul.info{
     padding: 3%;
@@ -182,12 +186,13 @@ ul.info{
     gap: .5rem;
     flex-direction: column;
     grid-column: 1/3;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .gallery{
     width: 100%;
+    min-width: 220px;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
@@ -204,9 +209,19 @@ ul.info{
     font-size: 2rem;
     justify-content: end;
     order: 0;
+    height: 25px;
+    width: 25px;
+    justify-self: end;
 }
 .activate{
     display: absolute;
+}
+
+rect{
+    fill: var(--highlight);
+    stroke: transparent;
+    opacity: 0.5;
+    cursor: pointer;
 }
 /* #ARA{
     fill:red;
@@ -246,8 +261,10 @@ ul.info{
     pointer-events: auto;
 }
 .card {
+    padding: 1.5rem;
     border-radius: 1%;
-    max-width:150rem;
+    max-width:160rem;
+    min-width: 700px;
     left: 10%;
     grid-template-columns:3fr 3fr 3fr 3fr;
     grid-template-rows:1fr 3fr 3fr;
@@ -256,7 +273,7 @@ h1.info{
     order:-1;
     grid-column: 1/4;
     align-self: flex-end;
-    padding-left:33% ;
+    padding-left:3% ;
     margin: 2%;
 }
 ul.info{
@@ -264,6 +281,7 @@ ul.info{
     order: 0;
     grid-row: 2/4;
     grid-column: auto;
+    min-width: 190px;
 }
 
 .close{
@@ -271,6 +289,7 @@ ul.info{
 }
 .gallery{
     grid-column: auto;
+    min-width: 150px;
 }
 }
 
