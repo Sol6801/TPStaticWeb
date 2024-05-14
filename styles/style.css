@@ -6,6 +6,7 @@
 
 :root {
     --bgc: #ecdcc9;
+    --bgc-sec-content:#7c6442;
     --contrast: #edd4b2;
     --primary: #a35959;
     --hover: #641a34;
@@ -14,15 +15,10 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100 svh; /* es para que se vea bien en el celular considerando la barra de navegacion y botonera de abajo*/
-}
-
-/*sol estilos nav*/
-
-body{
     background-color: var(--bgc);
-    min-height: 100svh;
 }
 
+/*estilos nav*/
 .header{
     width: 100%;
     display: flex;
@@ -111,27 +107,61 @@ button{
     background-color: var(--primary);
     padding: 0.4rem;
     border-radius: 3px;
-    /* box-shadow: 0 0 0 0.2rem #0f0f0f2a; */
 }
 
-
-
-
+/*-- secciones --- */
 .section {
-    background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
-    background-position: center; /* Centrar la imagen */
+    background-size:contain;
+    background-position: center;
     width: 100%;
     aspect-ratio: 3 / 2;
-    color: white; /* Color de texto */
-    text-align: center; /* Alinear el texto al centro */
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    padding: 8%;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 3fr 3fr;
+    gap: 5px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    padding:5%;
 }
 
 .inicio{
     background-image: url(/assets/imagen-inicio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.celda{
+    background-color: white;
+    height: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.nea-uno{
+    background-image: url(/assets/nea-corrientes.jpg);
+}
+
+.nea-dos{
+    background-image: url(/assets/nea-misiones.jpeg);
+}
+
+.nea-tres{
+    background-image: url(/assets/nea-formosa.jpg);
+}
+
+.nea-cuatro{
+    background-image: url(/assets/nea-corrientes2.jpeg);
+}
+
+.nea-cinco{
+    background-image: url(/assets/nea-chaco.jpg);
+}
+
+.nea-seis{
+    background-image: url(/assets/nea-misiones2.jpg);
 }
 
 .noreste {
@@ -156,9 +186,13 @@ button{
 
 
 .contenido {
-    padding: 20px; 
+    position: absolute;
+    padding: 2%; 
     background-color: #8b343480;
-    border-radius: 30%;
+    border-radius: 2%;
+    width: 80%;
+    left:10%;
+    
 }
 
 
@@ -173,33 +207,15 @@ button{
     text-align: center;
 }
 
+
 /* -- diseño para computadora --*/
+
 @media(width > 770px)
 {   
-    .section {
-        background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
-        background-position: center; /* Centrar la imagen */
-        width: 100%;
-        aspect-ratio: 3 / 2;
-        color: white; /* Color de texto */
-        text-align: center; /* Alinear el texto al centro */
-        display: flex;
-        justify-content: center; /* Centrar horizontalmente */
-        align-items: center; /* Centrar verticalmente */
-        padding: 8%;
-    }
-
     .inicio{
-        background-image: url(/assets/imagen-inicio.png);
-        aspect-ratio: 16 / 9;
-    }
-
-    .cuyo{
-        background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh9aMX7G-uA6lL7lPNTyClLD7BF5ryibgCnuGZacQU3Mtsz0criQggU0kgTGnMJuKZQx2GxENwCrjVZvoF78ZTrbV426mOTAug2ojy-2hDx9Wqo5wvnuHmqJ_Z1AKQ1BymnCIqxbY3QJVs/s1600/cuyo.jpg);
-
-        .contenido{
-            background-color: #BA5624;
-        }
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-color: var(--bgc);
     }
 
     .header .burger{
