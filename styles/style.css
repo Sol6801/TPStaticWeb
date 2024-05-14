@@ -109,7 +109,7 @@ button{
     border-radius: 3px;
 }
 
-/*-- secciones --- */
+/*-- estilo para secciones , grid e imagenes de cada region --- */
 .section {
     background-size:contain;
     background-position: center;
@@ -140,6 +140,7 @@ button{
     background-repeat: no-repeat;
 }
 
+/* ---- ubicacion de imagenes para el section Noreste-----*/
 .nea-uno{
     background-image: url(/assets/nea-corrientes.jpg);
 }
@@ -164,6 +165,92 @@ button{
     background-image: url(/assets/nea-misiones2.jpg);
 }
 
+/*------Ubicacion de imagens para Noroeste/ NOA------*/
+
+.noa-uno{
+    background-image: url(/assets/noa-jujuy.jpg);
+}
+
+.noa-dos{
+    background-image: url(/assets/noa-tucuman.jpg);
+}
+.noa-tres{
+    background-image: url(/assets/noa-catamarca.jpg);
+}
+
+.noa-cuatro{
+    background-image: url(/assets/noa-santiago.jpg);
+}
+
+.noa-cinco{
+    background-image: url(/assets/noa-salta.jpg);
+}
+
+.noa-seis{
+    background-image: url(/assets/noa-jujuy2.jpg);
+}
+
+/*------ Ubicacion de images para cuyo --------*/
+.cuyo-uno{
+    background-image: url(/assets/cuyo-sanjuan.jpg);
+}
+.cuyo-dos{
+    background-image: url(/assets/cuyo-mendoza2.jpg);
+}
+.cuyo-tres{
+    background-image: url(/assets/cuyo-larioja.jpg);
+}
+.cuyo-cuatro{
+    background-image: url(/assets/cuyo-sanluis.jpg);
+}
+.cuyo-cinco{
+    background-image: url(/assets/cuyo-sanjuan2.jpg);
+}
+.cuyo-seis{
+    background-image: url(/assets/cuyo-mendoza.png);
+}
+
+/*------ Ubicacion de imagenes para region pampeana -----*/
+.pamp-uno{
+    background-image: url(/assets/pampeana-entrerios.jpg);
+}
+.pamp-dos{
+    background-image: url(/assets/pampeana-buenosaires.jpg);
+}
+.pamp-tres{
+    background-image: url(/assets/pampeana-cordoba.jpg);
+}
+.pamp-cuatro{
+    background-image: url(/assets/pampeana-lapampa.jpg);
+}
+.pamp-cinco{
+    background-image: url(/assets/pampeana-santafe.jpg);
+}
+.pamp-seis{
+    background-image: url(/assets/pampeana-entrerios2.jpg);
+}
+
+/*------ Ubicacion de imagenes para region patagonia -------*/
+
+.pat-uno{
+    background-image: url(/assets/patagonia-neuquen.jpg);
+}
+.pat-dos{
+    background-image: url(/assets/patagonia-santacruz.jpg);
+}
+.pat-tres{
+    background-image: url(/assets/patagonia-rionegro.jpg);
+}
+.pat-cuatro{
+    background-image: url(/assets/patagonia-neuquen2.jpg);
+}
+.pat-cinco{
+    background-image: url(/assets/patagonia-chubut.jpg);
+}
+.pat-seis{
+    background-image: url(/assets/patagonia-santacruz2.jpg);
+}
+/*-------------- Color de fondo para cada region------------*/
 .noreste {
         background-color: #FCAF52;
 }
@@ -184,7 +271,7 @@ button{
         background-color: #8FD83C;
 }
 
-
+/* --------- estilos del contenido para todos los section   --------*/
 .contenido {
     position: absolute;
     padding: 2%; 
