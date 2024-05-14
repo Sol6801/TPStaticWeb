@@ -208,6 +208,13 @@ ul.info{
 .activate{
     display: absolute;
 }
+rect{
+    fill: blueviolet;
+    opacity: 0.5;
+}
+/* #ARA{
+    fill:red;
+} */
 @media (width > 770px) {
 
 .header .burger{
