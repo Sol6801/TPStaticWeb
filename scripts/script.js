@@ -17,7 +17,6 @@ burger.addEventListener('click', () =>{
 
 province.forEach((path) => {
 path.addEventListener('click', () =>{
-    
     map.classList.add('noclick');
     art.forEach((article) => {
         
