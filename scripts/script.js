@@ -1,7 +1,6 @@
 const button = document.querySelector('.burger') 
 const nav = document.querySelector('.nav')
 const burger = document.querySelector('#burger')
-<<<<<<< HEAD
 const province = document.querySelectorAll('path')
 const art = document.querySelectorAll('.info-card')
 const cards = document.querySelectorAll('.card')
@@ -10,15 +9,12 @@ const map = document.querySelector('.map')
 const text = document.querySelector('.container')
 const rect = document.querySelector('rect')
 const arc = document.querySelector('.ARC')
-=======
->>>>>>> rocio
 
 button.addEventListener('click', () =>{
     nav.classList.toggle('active')
 })
 burger.addEventListener('click', () =>{
     burger.classList.toggle('active')
-<<<<<<< HEAD
 })
 
 art.forEach((article) => {
@@ -50,6 +46,3 @@ art.forEach((article) => {
     })
 })
 
-=======
-})
->>>>>>> rocio
