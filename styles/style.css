@@ -328,8 +328,240 @@ ul.info{
     grid-column: auto;
     min-width: 150px;
     height: auto;
+
 }
 
 
+}
+
+/*-- estilo para secciones , grid e imagenes de cada region --- */
+.section {
+    background-size:contain;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 3fr 3fr;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding:5%;
+}
+
+.inicio{
+    background-image: url(/assets/index/imagen-inicio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.celda{
+    background-color: white;
+    height: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+/* ---- ubicacion de imagenes para el section Noreste-----*/
+.nea-uno{
+    background-image: url(/assets/index/nea-corrientes.jpg);
+}
+
+.nea-dos{
+    background-image: url(/assets/index/nea-misiones.jpeg);
+}
+
+.nea-tres{
+    background-image: url(/assets/index/nea-formosa.jpg);
+}
+
+.nea-cuatro{
+    background-image: url(/assets/index/corrientes1.jpg);
+}
+
+.nea-cinco{
+    background-image: url(/assets/index/nea-chaco.jpg);
+}
+
+.nea-seis{
+    background-image: url(/assets/index/nea-misiones2.jpg);
+}
+
+/*------Ubicacion de imagens para Noroeste/ NOA------*/
+
+.noa-uno{
+    background-image: url(/assets/index/noa-jujuy.jpg);
+}
+
+.noa-dos{
+    background-image: url(/assets/index/noa-tucuman.jpg);
+}
+.noa-tres{
+    background-image: url(/assets/index/noa-catamarca.jpg);
+}
+
+.noa-cuatro{
+    background-image: url(/assets/index/noa-santiago.jpg);
+}
+
+.noa-cinco{
+    background-image: url(/assets/index/noa-salta.jpg);
+}
+
+.noa-seis{
+    background-image: url(/assets/index/noa-jujuy2.jpg);
+}
+
+/*------ Ubicacion de images para cuyo --------*/
+.cuyo-uno{
+    background-image: url(/assets/index/cuyo-sanjuan.jpg);
+}
+.cuyo-dos{
+    background-image: url(/assets/index/cuyo-mendoza2.jpg);
+}
+.cuyo-tres{
+    background-image: url(/assets/index/cuyo-larioja.jpg);
+}
+.cuyo-cuatro{
+    background-image: url(/assets/index/cuyo-sanluis.jpg);
+}
+.cuyo-cinco{
+    background-image: url(/assets/index/cuyo-sanjuan2.jpg);
+}
+.cuyo-seis{
+    background-image: url(/assets/index/cuyo-mendoza.png);
+}
+
+/*------ Ubicacion de imagenes para region pampeana -----*/
+.pamp-uno{
+    background-image: url(/assets/index/pampeana-entrerios.jpg);
+}
+.pamp-dos{
+    background-image: url(/assets/index/pampeana-buenosaires.jpg);
+}
+.pamp-tres{
+    background-image: url(/assets/index/pampeana-cordoba.jpg);
+}
+.pamp-cuatro{
+    background-image: url(/assets/index/pampeana-lapampa.jpg);
+}
+.pamp-cinco{
+    background-image: url(/assets/index/pampeana-santafe.jpg);
+}
+.pamp-seis{
+    background-image: url(/assets/index/pampeana-entrerios2.jpg);
+}
+
+/*------ Ubicacion de imagenes para region patagonia -------*/
+
+.pat-uno{
+    background-image: url(/assets/index/patagonia-neuquen.jpg);
+}
+.pat-dos{
+    background-image: url(/assets/index/patagonia-santacruz.jpg);
+}
+.pat-tres{
+    background-image: url(/assets/index/patagonia-rionegro.jpg);
+}
+.pat-cuatro{
+    background-image: url(/assets/index/patagonia-neuquen2.jpg);
+}
+.pat-cinco{
+    background-image: url(/assets/index/patagonia-chubut.jpg);
+}
+.pat-seis{
+    background-image: url(/assets/index/patagonia-santacruz2.jpg);
+}
+/*-------------- Color de fondo para cada region------------*/
+.noreste {
+        background: linear-gradient(#FCAF52,90%,#FFCB5A);
+}
+
+.noroeste{
+    background: linear-gradient(#FFCB5A,90%,#BA5624);
+}
+.cuyo{
+    background: linear-gradient(#BA5624,90%,#8FD83C);
+
+}
+.pampeana{
+    background: linear-gradient(#8FD83C,90%, #32AFBA);
+}
+
+.patagonica{
+    background: linear-gradient(#32AFBA,90%,var(--primary));
+}
+
+
+/* --------- estilos del contenido para todos los section   --------*/
+.contenido {
+    position: absolute;
+    padding: 2%; 
+    background-color:  rgba(5, 5, 5, 0.562);
+    border-radius: 2%;
+    width: 80%;
+    left:10%;
+    
+}
+
+.bienvenidos {
+    font-size: 2em;
+}
+
+.intro{
+    font-size: 1.5em;
+}
+.footer{
+    bottom:0;
+    left: 0;
+    width: 100%;
+    padding: 5%;
+    display:block;
+    background-color: var(--primary);
+    color: rgb(12, 9, 9);
+    text-align: center;
+
+}
+
+
+/* -- diseño para computadora --*/
+
+@media(width > 770px)
+{   
+    .inicio{
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-color: var(--bgc);
+    }
+    .header .burger{
+        display: none;
+    }
+    .header{
+        flex-flow: row nowrap;
+        gap: 1rem;
+    }
+    .nav{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0.5rem 0;
+        padding: 1rem;
+        align-items: flex-end;
+        pointer-events: auto;
+    }
+    .nav-list{
+        flex-direction: row;
+    
+    }
+    .nav-list li {
+        margin: 0 .5 rem;
+    }
+    
+    .nav-list li a:hover{
+        background-color: var(--hover);
+    }
+    
 }
 
