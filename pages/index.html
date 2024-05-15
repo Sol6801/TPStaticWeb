@@ -3,14 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <title>Argentina</title>
+    <title>Recorriendo Argentina</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" type="image/png" href="/assets/index/imagen-inicio.jpg">
 </head>
 <body>
-    <ul id="nav">
-    	
-	</ul>
 
-    
+    <header class="header">
+        <div class="logo"><img src="/assets/logo.png" width="100%"></div>
+        <button class="burger">
+            <div id="burger">
+                <span id="top-bar"></span>
+                <span id="bar"></span>
+                <span id="bottom-bar"></span>
+              </div>
+        </button>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="map.html">Mapa</a></li>
+                <li><a href="passport.html">Pasaporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="section inicio">
+             <div class="contenido">
+                <h1 class="bienvenidos">Bienvenidos</h1>
+                <p class="intro">Esta pagina la creamos para conocer las distinatas regiones de Argentina y sus lugares turisticos de preferencia. </p>
+            </div>
+        </section>
+
+        <section class="section noreste">
+            <div class="contenido">
+                <h1>Noreste</h1>
+                <details>
+                    <summary>Info</summary>
+                        <p>Tambien conocida como NEA, comprende las provincias de Formosa, Chaco, Corrientes y Misiones. </br>
+                            Es una de las regiones histórico-geográficas en que se subdivide la República Argentina. Es característico el clima subtropical.
+                            </p>
+                </details>
+            </div>
+            <div class="celda nea-uno" title="Corrientes"></div>
+            <div class="celda nea-dos" title="Misiones"></div>
+            <div class="celda nea-tres" title="Formosa"></div>
+            <div class="celda nea-cuatro" title="Corrientes "></div>
+            <div class="celda nea-cinco" title="Chaco"></div>
+            <div class="celda nea-seis" title="Misiones "></div>
+        </section>
+
+        <section class="section noroeste ">
+            <div class="contenido">
+                <h1>Noroeste</h1>
+                <details>
+                    <summary>Info</summary>
+                        <p>Conocida como NOA, las provincias que la integran son:
+                            Jujuy, Salta, Catamarca, Tucumán y Santiago del Estero.</p>
+                </details>
+            </div>
+            <div class="celda noa-uno" title="Jujuy"></div>
+            <div class="celda noa-dos" title="Tucumán"></div>
+            <div class="celda noa-tres" title="Catamarca"></div>
+            <div class="celda noa-cuatro" title="Santiago del Estero"></div>
+            <div class="celda noa-cinco" title="Salta"></div>
+            <div class="celda noa-seis" title="Jujuy"></div>
+        </section>
+
+        <section class="section cuyo">
+            <div class="contenido">
+                <h1>Cuyo</h1>
+                <details>
+                    <summary>Info</summary>
+                    <p>Es una región geográfica e histórica situada en el centro oeste de la República Argentina y está conformada por las provincias de Mendoza, San Juan, La Rioja y San Luis.</p>
+                </details>
+            </div>
+            <div class="celda cuyo-uno" title="San Juan"></div>
+            <div class="celda cuyo-dos" title="Mendoza"></div>
+            <div class="celda cuyo-tres" title="La Rioja"></div>
+            <div class="celda cuyo-cuatro" title="San Luis"></div>
+            <div class="celda cuyo-cinco" title="San Juan"></div>
+            <div class="celda cuyo-seis" title="Mendoza "></div>
+        </section>
+
+        <section class="section pampeana">
+            <div class="contenido">
+                <h1>Pampeana</h1>
+                <details>
+                    <summary>Info</summary>
+                    <p>La componen las provincias de Santa Fe, Entre Ríos, La Pampa, Córdoba, la Provincia de Buenos Aires y la Ciudad Autónoma de Buenos Aires</p>
+                </details>
+            </div>
+            <div class="celda pamp-uno" title="Entre Rios"></div>
+            <div class="celda pamp-dos" title="Buenos Aires"></div>
+            <div class="celda pamp-tres" title="Córdoba"></div>
+            <div class="celda pamp-cuatro" title="La Pampa"></div>
+            <div class="celda pamp-cinco" title="Santa Fe"></div>
+            <div class="celda pamp-seis" title="Entre Rios"></div>
+        </section>
+
+        <section class="section patagonica">
+            <div class="contenido">
+                <h1>Patagonia</h1>
+                <details>
+                    <summary>Info</summary>
+                    <p>Se ubica en el extremo sur del continente americano, y abarca las provincias más australes: Neuquén, Río Negro, Chubut, Santa Cruz y Tierra del Fuego, Antártida e Islas del Atlántico Sur. Comprende también una muy pequeña porción del sur de La Pampa, Mendoza y Buenos Aires.</p>
+                </details>
+            </div>
+            <div class="celda pat-uno" title="Neuquén"></div>
+            <div class="celda pat-dos" title="Santa Cruz"></div>
+            <div class="celda pat-tres" title="Rio Negro"></div>
+            <div class="celda pat-cuatro" title="Neuquén"></div>
+            <div class="celda pat-cinco" title="Chubut"></div>
+            <div class="celda pat-seis" title="Santa Cruz"></div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>© ProyectoWeb 2024 — Todos los derechos reservados</p>
+            <p> Para mas informacion: 
+                <a href="https://www.argentina.gob.ar/turismo/experiencias"> Experiencias argentinas para vivir </a>
+            </p>
+        </div>
+    </footer>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
