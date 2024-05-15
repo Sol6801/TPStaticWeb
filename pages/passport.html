@@ -2,11 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="../assets/logo.gif" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>Document</title>
+    <title>Pasaporte</title>
 </head>
 <body>
-    
+    <header class="header">
+        <picture class="logo"><a href="index.html"><img src="../assets/logo.png" width="100%"></a></picture>
+        <button class="burger">
+            <div id="burger">
+                <span id="top-bar"></span>
+                <span id="bar"></span>
+                <span id="bottom-bar"></span>
+            </div>
+        </button>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="map.html">Mapa</a></li>
+                <li><a href="passport.html">Pasaporte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <form>
+
+            <div class="names">
+              Name<br>
+              <input type="text" name="first-name"><br>
+            </div>
+          
+            <div class="skills">
+            <input type="checkbox" value="ARE">Entre Ríos<br>
+            <input type="checkbox" value="ARA">Salta<br>
+            <input type="checkbox" value="ARY">Jujuy<br>
+            <input type="checkbox" value="ARP">Formosa<br>
+            <input type="checkbox" value="ARN">Misiones<br>
+            <input type="checkbox" value="ARH">Chaco<br>
+            <input type="checkbox" value="ARK">Catamarca<br>
+            <input type="checkbox" value="ARF">La Rioja<br>
+            <input type="checkbox" value="ARJ">San Juan<br>
+            <input type="checkbox" value="ARM">Mendoza<br>
+            <input type="checkbox" value="ARQ">Neuquén<br>
+            <input type="checkbox" value="ARU">Chubut<br>
+            <input type="checkbox" value="ARR">Río Negro<br>
+            <input type="checkbox" value="ARZ">Santa Cruz<br>
+            <input type="checkbox" value="ARV">Tierra del Fuego<br>
+            <input type="checkbox" value="ARB">Buenos Aires<br>
+            <input type="checkbox" value="ARC">Ciudad de Buenos Aires<br>
+            <input type="checkbox" value="ARS">Santa Fe<br>
+            <input type="checkbox" value="ART">Tucumán<br>
+            <input type="checkbox" value="ARG">Santiago del Estero<br>
+            <input type="checkbox" value="ARD">San Luis<br>
+            <input type="checkbox" value="ARL">La Pampa<br>
+            <input type="checkbox" value="ARX">Córdoba<br>
+            </div>
+          
+            <button type="submit">Submit</button>
+          
+          </form>
+    </main>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
