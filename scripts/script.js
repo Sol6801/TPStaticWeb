@@ -9,8 +9,6 @@ const map = document.querySelector('.map')
 const text = document.querySelector('.container')
 const rect = document.querySelector('rect')
 const arc = document.querySelector('.ARC')
-const form = document.querySelector('form')
-const visited = document.querySelector('visited')
 
 button.addEventListener('click', () =>{
     nav.classList.toggle('active')
@@ -49,12 +47,4 @@ art.forEach((article) => {
     
     
 })
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
 
-  document.querySelectorAll('[type="checkbox"]').forEach(item => {
-    if (item.checked === true) {
-        path.style.fill = red;
-    }
-  })
-});

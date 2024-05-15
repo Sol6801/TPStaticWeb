@@ -1,12 +1,12 @@
 :root {
     --bgc: #fadcbe;
-    --contrast: #bbcfc9;
+    --contrast: #babfca;
     --primary: #3f6796;
     --hover: #72a5d4;
     --highlight:#041527;
+    --try:#885e8b;
 }
 /*
-
 
     --bgc: #ecdcc9;
     --contrast: #edd4b2;
@@ -162,6 +162,7 @@ button{
 }
 
 /*cards*/
+
 .info-card{
     display: none;
 }
@@ -242,6 +243,9 @@ rect{
 /* #ARY{
     fill: red;
 } 
+*/
+
+/*passport
 
 form{
     
@@ -249,10 +253,34 @@ form{
 button[type=submit] {
     cursor: pointer;
     padding: 0.2rem;
+    border: 1px solid black;
     
 }
-/*passport*/
+.name input[type=text]{
+    margin-top: 0.5rem;
 
+}
+.box{    
+    display: flex;
+    height: 90vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.provinces{
+    display: grid;
+    grid-template-columns:0.25fr 1fr 0.25fr 1fr;
+    grid-template-rows:auto;
+    align-content: start;
+    justify-content: end;
+    align-items: baseline;
+
+}
+.provinces input[type=checkbox]{
+    margin: 0.35rem;
+    float: left;
+}
 
 @media (width > 770px) {
 
@@ -352,7 +380,7 @@ ul.info{
 }
 
 .inicio{
-    background-image: url(/assets/index/imagen-inicio.jpg);
+    background-image: url(../assets/index/imagen-inicio.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -366,113 +394,113 @@ ul.info{
 
 /* ---- ubicacion de imagenes para el section Noreste-----*/
 .nea-uno{
-    background-image: url(/assets/index/nea-corrientes.jpg);
+    background-image: url(../assets/index/nea-corrientes.jpg);
 }
 
 .nea-dos{
-    background-image: url(/assets/index/nea-misiones.jpeg);
+    background-image: url(../assets/index/nea-misiones.jpeg);
 }
 
 .nea-tres{
-    background-image: url(/assets/index/nea-formosa.jpg);
+    background-image: url(../assets/index/nea-formosa.jpg);
 }
 
 .nea-cuatro{
-    background-image: url(/assets/index/corrientes1.jpg);
+    background-image: url(../assets/index/corrientes1.jpg);
 }
 
 .nea-cinco{
-    background-image: url(/assets/index/nea-chaco.jpg);
+    background-image: url(../assets/index/nea-chaco.jpg);
 }
 
 .nea-seis{
-    background-image: url(/assets/index/nea-misiones2.jpg);
+    background-image: url(../assets/index/nea-misiones2.jpg);
 }
 
 /*------Ubicacion de imagens para Noroeste/ NOA------*/
 
 .noa-uno{
-    background-image: url(/assets/index/noa-jujuy.jpg);
+    background-image: url(../assets/index/noa-jujuy.jpg);
 }
 
 .noa-dos{
-    background-image: url(/assets/index/noa-tucuman.jpg);
+    background-image: url(../assets/index/noa-tucuman.jpg);
 }
 .noa-tres{
-    background-image: url(/assets/index/noa-catamarca.jpg);
+    background-image: url(../assets/index/noa-catamarca.jpg);
 }
 
 .noa-cuatro{
-    background-image: url(/assets/index/noa-santiago.jpg);
+    background-image: url(../assets/index/noa-santiago.jpg);
 }
 
 .noa-cinco{
-    background-image: url(/assets/index/noa-salta.jpg);
+    background-image: url(../assets/index/noa-salta.jpg);
 }
 
 .noa-seis{
-    background-image: url(/assets/index/noa-jujuy2.jpg);
+    background-image: url(../assets/index/noa-jujuy2.jpg);
 }
 
 /*------ Ubicacion de images para cuyo --------*/
 .cuyo-uno{
-    background-image: url(/assets/index/cuyo-sanjuan.jpg);
+    background-image: url(../assets/index/cuyo-sanjuan.jpg);
 }
 .cuyo-dos{
-    background-image: url(/assets/index/cuyo-mendoza2.jpg);
+    background-image: url(../assets/index/cuyo-mendoza2.jpg);
 }
 .cuyo-tres{
-    background-image: url(/assets/index/cuyo-larioja.jpg);
+    background-image: url(../assets/index/cuyo-larioja.jpg);
 }
 .cuyo-cuatro{
-    background-image: url(/assets/index/cuyo-sanluis.jpg);
+    background-image: url(../assets/index/cuyo-sanluis.jpg);
 }
 .cuyo-cinco{
-    background-image: url(/assets/index/cuyo-sanjuan2.jpg);
+    background-image: url(../assets/index/cuyo-sanjuan2.jpg);
 }
 .cuyo-seis{
-    background-image: url(/assets/index/cuyo-mendoza.png);
+    background-image: url(../assets/index/cuyo-mendoza.png);
 }
 
 /*------ Ubicacion de imagenes para region pampeana -----*/
 .pamp-uno{
-    background-image: url(/assets/index/pampeana-entrerios.jpg);
+    background-image: url(../assets/index/pampeana-entrerios.jpg);
 }
 .pamp-dos{
-    background-image: url(/assets/index/pampeana-buenosaires.jpg);
+    background-image: url(../assets/index/pampeana-buenosaires.jpg);
 }
 .pamp-tres{
-    background-image: url(/assets/index/pampeana-cordoba.jpg);
+    background-image: url(../assets/index/pampeana-cordoba.jpg);
 }
 .pamp-cuatro{
-    background-image: url(/assets/index/pampeana-lapampa.jpg);
+    background-image: url(../assets/index/pampeana-lapampa.jpg);
 }
 .pamp-cinco{
-    background-image: url(/assets/index/pampeana-santafe.jpg);
+    background-image: url(../assets/index/pampeana-santafe.jpg);
 }
 .pamp-seis{
-    background-image: url(/assets/index/pampeana-entrerios2.jpg);
+    background-image: url(../assets/index/pampeana-entrerios2.jpg);
 }
 
 /*------ Ubicacion de imagenes para region patagonia -------*/
 
 .pat-uno{
-    background-image: url(/assets/index/patagonia-neuquen.jpg);
+    background-image: url(../assets/index/patagonia-neuquen.jpg);
 }
 .pat-dos{
-    background-image: url(/assets/index/patagonia-santacruz.jpg);
+    background-image: url(../assets/index/patagonia-santacruz.jpg);
 }
 .pat-tres{
-    background-image: url(/assets/index/patagonia-rionegro.jpg);
+    background-image: url(../assets/index/patagonia-rionegro.jpg);
 }
 .pat-cuatro{
-    background-image: url(/assets/index/patagonia-neuquen2.jpg);
+    background-image: url(../assets/index/patagonia-neuquen2.jpg);
 }
 .pat-cinco{
-    background-image: url(/assets/index/patagonia-chubut.jpg);
+    background-image: url(../assets/index/patagonia-chubut.jpg);
 }
 .pat-seis{
-    background-image: url(/assets/index/patagonia-santacruz2.jpg);
+    background-image: url(../assets/index/patagonia-santacruz2.jpg);
 }
 /*-------------- Color de fondo para cada region------------*/
 .noreste {
