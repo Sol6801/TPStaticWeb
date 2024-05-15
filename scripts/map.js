@@ -1,6 +1,5 @@
 const places = document.querySelectorAll('path')
 
-
 list = JSON.parse(localStorage.getItem("provinces"));
 
 list.forEach((item) => {

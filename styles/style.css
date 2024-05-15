@@ -240,20 +240,14 @@ rect{
     opacity: 0.5;
     cursor: pointer;
 }
-/* #ARY{
-    fill: red;
-} 
-*/
 
-/*passport
+/*passport*/
 
-form{
-    
-}*/
 button[type=submit] {
-    cursor: pointer;
-    padding: 0.2rem;
-    border: 1px solid black;
+    color: var(--bgc);
+    background-color: var(--primary);
+    padding: 0.5rem;
+    border-radius: 3px;
     
 }
 .name input[type=text]{
@@ -262,10 +256,12 @@ button[type=submit] {
 }
 .box{    
     display: flex;
+    margin: 1rem;
     height: 90vh;
     flex-wrap: wrap;
+    margin: 1rem;
+    gap: 2rem;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: baseline;
 }
 .provinces{
@@ -280,6 +276,15 @@ button[type=submit] {
 .provinces input[type=checkbox]{
     margin: 0.35rem;
     float: left;
+}
+
+.title{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+.text{
+    margin: 2rem 0;
 }
 
 @media (width > 770px) {
@@ -504,7 +509,7 @@ ul.info{
 }
 /*-------------- Color de fondo para cada region------------*/
 .noreste {
-        background: linear-gradient(#FCAF52,90%,#FFCB5A);
+    background: linear-gradient(#FCAF52,90%,#FFCB5A);
 }
 
 .noroeste{
@@ -529,8 +534,8 @@ ul.info{
     padding: 2%; 
     background-color:  rgba(5, 5, 5, 0.562);
     border-radius: 2%;
-    width: 80%;
-    left:10%;
+    width: 70%;
+    left:16%;
     
 }
 
@@ -562,6 +567,10 @@ ul.info{
         background-size:cover;
         background-repeat: no-repeat;
         background-color: var(--bgc);
+    }
+    .section{
+        padding: 5% 10%;
+        max-height: 85vh;
     }
     .header .burger{
         display: none;

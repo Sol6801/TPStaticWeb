@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="../assets/logo.gif" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>Mapa</title>
+    <title>Recorriendo Argentina</title>
 </head>
 <body>
     <header class="header">
@@ -19,12 +19,14 @@
         <nav class="nav">
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="map.html">Mapa</a></li>
                 <li><a href="passport.html">Pasaporte</a></li>
+                <li><a href="map.html">Mapa</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
+        <h1 class="title">Recorré Argentina!</h1>
+        <p class="text">Explorá el país y decidí donde viajar.</p>
     <section class="map">
         <svg version="1.2" viewbox="250 0 500 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
             <g id="features">
@@ -649,10 +651,5 @@
     </main>
     <script src="../scripts/script.js"></script>
     <script src="../scripts/map.js"></script>
-    <script>
-        
-    list = JSON.parse(localStorage.getItem("provinces"));
-
-    </script>
 </body>
 </html>
