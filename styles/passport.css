@@ -1,0 +1,72 @@
+/*      pasaporte        */
+@import url('https://fonts.googleapis.com/css2?family=OCR+B&display=swap');
+
+/* Estilos para el contenedor .pasaporte */ 
+.grid-container {
+    position: absolute;
+    background-image: url(/assets/passport/plantilla-pasaporte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #333; /* Borde gris oscuro */
+    border-radius: 5px;
+    overflow: hidden; /* Para evitar que el contenido se desborde */
+    margin: 10%;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-right: 2px solid #000; /* Borde derecho negro */
+    font-family: "OCR-B", monospace;
+    padding: 5%;
+}
+
+.grid-container2 {
+    position: absolute;
+    background-image: url(/assets/passport/plantilla-pasaporte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #333; /* Borde gris oscuro */
+    border-radius: 5px;
+    overflow: hidden; /* Para evitar que el contenido se desborde */
+    margin: 4%;
+}
+
+
+.grid-item:last-child {
+    border-right: none; /* Elimina el borde derecho de la última celda */
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img2{
+    max-width: 50%;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    .grid-item {
+        border-right: none; /* Elimina el borde derecho en dispositivos móviles */
+    }
+}
+
+/* Estilos para dispositivos de escritorio */
+@media screen and (min-width: 601px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
