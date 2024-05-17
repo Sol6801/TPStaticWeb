@@ -172,9 +172,9 @@ button{
     box-shadow: 0 0 0 100rem #0000009c;
     position: absolute;
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:0.3fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-    margin-bottom: 5%;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:0.3fr repeat(7,2fr);
+    margin-bottom: 15%;
     padding: 0.3rem;
     left:10%;
     top:18%;
