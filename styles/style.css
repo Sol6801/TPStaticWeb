@@ -386,7 +386,7 @@ ul.info{
 }
 
 .inicio{
-    background-image: url(/assets/imagen-inicio.webp);
+    background-image: url(../assets/imagen-inicio.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
