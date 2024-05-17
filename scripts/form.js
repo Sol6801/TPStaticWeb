@@ -5,6 +5,7 @@ const accepted = document.querySelector('#accepted')
 const rejected = document.querySelector('#rejected')
 const closing = document.querySelectorAll('.close')
 const passports = document.querySelectorAll('passports')
+const stamp = document.querySelector('#stamp')
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -20,21 +21,17 @@ form.addEventListener('submit', (e) => {
 
   if (provinces.length < 6){
     rejected.classList.add('grid-container')
-    rejected.classList.add('activate'); 
   } else{
     accepted.classList.add('grid-container')
-    accepted.classList.add('activate')
   }
       closing.forEach((close) => {
         
         close.addEventListener('click', () =>{
-            if (rejected.classList.contains('activate')){
+            if (rejected.classList.contains('grid-container')){
               rejected.classList.remove('grid-container')
-              rejected.classList.remove('activate'); 
           }          
-            if (accepted.classList.contains('activate')){
+            if (accepted.classList.contains('grid-container')){
               accepted.classList.remove('grid-container')
-              accepted.classList.remove('activate'); 
           }
         })
       })

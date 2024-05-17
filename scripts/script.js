@@ -23,8 +23,7 @@ art.forEach((article) => {
             map.classList.add('noclick');
         
             if (article.classList.contains(path.id)){
-                article.classList.add('card');
-                article.classList.add('activate');   
+                article.classList.add('card');  
             }
         })
     })
@@ -32,14 +31,12 @@ art.forEach((article) => {
 
         if (article.classList.contains('ARC')){
             article.classList.add('card');
-            article.classList.add('activate'); 
         }
     })
     closes.forEach((close) => {
 
         close.addEventListener('click', () =>{
 
-            article.classList.remove('activate')
             article.classList.remove('card');
             map.classList.remove('noclick');
         })

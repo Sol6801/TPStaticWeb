@@ -383,23 +383,28 @@ button[type=submit] {
     border: 15px solid #363547; 
     border-radius: 2%;
     overflow: hidden;
-    margin: 10%;
+    margin: 5%;
     font-family: "OCR-B", monospace;
     display: grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows: 0.2fr 1fr 1fr;
     box-shadow: 0 0 0 100rem #0000009c;
-    min-width: 20rem;
+    width: 90%;
+    aspect-ratio: 1/1;
+    height: auto;
+    min-width: 300px;
 }
 @import url('https://fonts.googleapis.com/css2?family=OCR+B&display=swap');
 .grid-item {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    padding: 8%;
     order:-1;
     border-right: black 1px solid;
+    grid-row: 1/ 4;
+    padding: 3%;
+    
 
 }
 .grid-item2{
@@ -409,7 +414,6 @@ button[type=submit] {
 .grid-stamp{
     grid-column: 2;
     grid-row: 2 / 4;
-    border-left: black 1px solid;
 }
 .stamp {
     margin-top: 25%;
@@ -444,6 +448,9 @@ button[type=submit] {
 
 .bold-text {
     font-weight: bold;
+    max-width: 50%;
+    align-self: flex-start;
+    padding: 2%;
 }
 
 
@@ -514,9 +521,6 @@ rect{
     width: 80%;
     gap: 5px;
 
-}
-.activate{
-    display: absolute;
 }
 .close{
     position: relative;
@@ -649,14 +653,17 @@ button[type=submit] {
     cursor: pointer;
 }
 
+
 .grid-container{
-    left: 15%;
+    left: 20%;
     top: 5%;
-    max-width: 40rem;
+    max-width: 50%;
+    max-height: 70%;
 }
 
 .submit-buttons{
     display: flex;
+    flex-direction: row;
     width: 80%;
     justify-content: center;
     gap: 10%;
