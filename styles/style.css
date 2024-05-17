@@ -561,17 +561,7 @@ ul.info{
 
 
 
-
-
-
-
 /*---------------------- grid de pasaporte aceptado -----------------------*/ 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-}
 
 .grid-container {
     position: absolute;
