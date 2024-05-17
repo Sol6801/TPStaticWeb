@@ -448,7 +448,7 @@ button[type=submit] {
 
 .bold-text {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     align-self: flex-start;
     padding: 2%;
 }
@@ -514,11 +514,11 @@ rect{
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows:0.3fr repeat(7, 2fr);
     margin-bottom: 15%;
-    padding: 0.3rem;
+    padding: 1rem;
     left:10%;
     top:18%;
     min-width: 250px;
-    width: 80%;
+    width: 85%;
     gap: 5px;
 
 }
@@ -660,7 +660,9 @@ button[type=submit] {
     max-width: 50%;
     max-height: 65%;
 }
-
+.bold-text {
+    font-size: 2rem;
+}
 .submit-buttons{
     display: flex;
     flex-direction: row;
@@ -695,7 +697,7 @@ button[type=submit] {
     left: 10%;
     grid-template-columns:repeat(4, 3fr);
     grid-template-rows:0.5fr 3fr 3fr;    
-    height: 90%;
+    height: auto;
 }
 .close{
     order: 0;
