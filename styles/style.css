@@ -328,21 +328,30 @@ button[type=submit] {
     padding: 0.5rem;
     border-radius: 3px;
     cursor: pointer;
-    
 }
 .name input[type=text]{
     margin-top: 0.5rem;
-
+    
+}
+.submit-buttons{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    gap: 10%;
+    
 }
 .box{    
+    min-width: 25rem;
     display: flex;
     margin: 1rem;
-    height: 90vh;
+    height: 70vh;
     flex-wrap: wrap;
     margin: 1rem;
     gap: 2rem;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
+    width: 70%;
+    align-self: center;
 }
 .provinces{
     display: grid;
@@ -369,6 +378,7 @@ button[type=submit] {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: absolute;
     border: 15px solid #363547; 
     border-radius: 2%;
     overflow: hidden;
@@ -377,6 +387,7 @@ button[type=submit] {
     display: grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows: 0.2fr 1fr 1fr;
+    box-shadow: 0 0 0 100rem #0000009c;
 }
 @import url('https://fonts.googleapis.com/css2?family=OCR+B&display=swap');
 .grid-item {
@@ -445,9 +456,20 @@ rect{
     margin-top: 2rem;
     font-size: 1.8rem;
     color: var(--primary);
+    align-self: center;
 }
 .text{
     margin: 2rem 0;
+}
+
+.back{
+    color: var(--bgc);
+    background-color: var(--primary);
+    padding: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    float: right;
 }
 /*cards*/
 
@@ -560,6 +582,7 @@ ul.info{
     height: 90vh;
     width: 49vh;
     pointer-events: auto;
+    margin-bottom: 8rem;
 }
 /*cards*/
 

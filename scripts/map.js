@@ -1,4 +1,5 @@
 const places = document.querySelectorAll('path')
+const goPassport = document.querySelector('.back')
 
 list = JSON.parse(localStorage.getItem("provinces"));
 
@@ -10,3 +11,7 @@ list.forEach((item) => {
     })
     console.log(item)
 })
+
+
+goPassport.addEventListener('click',() =>{
+    window.document.location = 'passport.html'})
