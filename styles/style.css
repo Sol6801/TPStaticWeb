@@ -131,243 +131,7 @@ button{
     /* box-shadow: 0 0 0 0.2rem #0f0f0f2a; */
 }
 
-/*map styling*/
-
-.map{
-    height: 50vh;
-    width: 80%;
-    pointer-events: auto;
-}
-.map.noclick{
-    pointer-events: none;
-}
-
-.map path {
-    fill: var(--primary);
-    stroke: var(--bgc);
-    stroke-width: 2px;
-    cursor: pointer;
-}
-
-.map :hover{
-    fill: var(--hover);
-}
-
-
-.container{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    place-content: center center;
-}
-
-/*cards*/
-
-.info-card{
-    display: none;
-}
-.card{
-    background-color: var(--bgc);
-    box-shadow: 0 0 0 100rem #0000009c;
-    position: absolute;
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-template-rows:0.3fr repeat(7,2fr);
-    margin-bottom: 15%;
-    padding: 0.3rem;
-    left:10%;
-    top:18%;
-    min-width: 250px;
-    width: 80%;
-    gap: 5px;
-
-}
-.activate{
-    display: absolute;
-}
-.close{
-    position: relative;
-    display: flex;
-    cursor: pointer;
-    right: 0;
-    cursor: pointer;
-    color: black;
-    font-size: 2rem;
-    justify-content: end;
-    order: 0;
-    height: 25px;
-    width: 25px;
-    justify-self: end;
-}
-
-/*info*/
-
-h1.info{
-    order:-1;
-    grid-column: auto;
-    margin-top: 3%;
-    color: var(--primary);
-    padding: 5%;
-    grid-column: 1/3;
-}
-ul.info{
-    padding: 3%;
-    list-style-type: none;
-    gap: 0.8rem; 
-    order: 0;
-    display: flex;
-    gap: .5rem;
-    flex-direction: column;
-    grid-column: 1/4;
-    justify-content: center;
-    align-items: center;
-}
-/*images*/
-
-.gallery{
-    width: 100%;
-    min-width: 220px;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    grid-column: 1/4;
-}
-/*svg highlight*/
-
-rect{
-    fill: var(--highlight);
-    stroke: transparent;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-/*passport*/
-
-button[type=submit] {
-    color: var(--bgc);
-    background-color: var(--primary);
-    padding: 0.5rem;
-    border-radius: 3px;
-    
-}
-.name input[type=text]{
-    margin-top: 0.5rem;
-
-}
-.box{    
-    display: flex;
-    margin: 1rem;
-    height: 90vh;
-    flex-wrap: wrap;
-    margin: 1rem;
-    gap: 2rem;
-    flex-direction: column;
-    align-items: baseline;
-}
-.provinces{
-    display: grid;
-    grid-template-columns:0.25fr 1fr 0.25fr 1fr;
-    grid-template-rows:auto;
-    align-content: start;
-    justify-content: end;
-    align-items: baseline;
-
-}
-.provinces input[type=checkbox]{
-    margin: 0.35rem;
-    float: left;
-}
-
-.title{
-    margin-top: 2rem;
-    font-size: 1.8rem;
-    color: var(--primary);
-}
-.text{
-    margin: 2rem 0;
-}
-
-@media (width > 770px) {
-
-/*menu*/
-
-.header .burger{
-    display: none;
-}
-.header{
-    flex-flow: row nowrap;
-    gap: 1rem;
-}
-.nav{
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin: 0.5rem 0;
-    padding: 1rem;
-    align-items: flex-end;
-    pointer-events: auto;
-}
-.nav-list{
-    flex-direction: row;
-
-}
-.nav-list li {
-    margin: 0 .5 rem;
-}
-
-.nav-list li a:hover {
-    background-color: var(--hover);
-}
-
-/*map*/
-
-.map{
-    height: 90vh;
-    width: 49vh;
-    pointer-events: auto;
-}
-/*cards*/
-
-.card {
-    padding: 1.5rem;
-    border-radius: 1%;
-    max-width:160rem;
-    min-width: 700px;
-    left: 10%;
-    grid-template-columns:3fr 3fr 3fr 3fr;
-    grid-template-rows:0.5fr 3fr 3fr;    
-    height: 90%;
-}
-.close{
-    order: 0;
-}
-h1.info{
-    order:-1;
-    padding: 0;
-    grid-column: 1/4;
-    align-self: flex-end;
-    padding-left:3% ;
-}
-ul.info{
-    align-items: start;
-    order: 0;
-    grid-row: 2/4;
-    grid-column: auto;
-    min-width: 190px;
-}
-
-.gallery{
-    aspect-ratio: 1/1;
-    grid-column: auto;
-    min-width: 150px;
-    height: auto;
-
-}
-
-
-}
-
+/*index*/
 /*-- estilo para secciones , grid e imagenes de cada region --- */
 .section {
     background-size:contain;
@@ -377,7 +141,7 @@ ul.info{
     color: white;
     text-align: center;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: repeat(3, 3fr);
     grid-template-rows: 3fr 3fr;
     gap: 5px;
     justify-content: center;
@@ -547,6 +311,298 @@ ul.info{
 .intro{
     font-size: 1.5em;
 }
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    place-content: center center;
+}
+
+/*passport*/
+
+button[type=submit] {
+    color: var(--bgc);
+    background-color: var(--primary);
+    padding: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.name input[type=text]{
+    margin-top: 0.5rem;
+
+}
+.box{    
+    display: flex;
+    margin: 1rem;
+    height: 90vh;
+    flex-wrap: wrap;
+    margin: 1rem;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: baseline;
+}
+.provinces{
+    display: grid;
+    grid-template-columns:0.25fr 1fr 0.25fr 1fr;
+    grid-template-rows:auto;
+    align-content: start;
+    justify-content: end;
+    align-items: baseline;
+
+}
+.provinces input[type=checkbox]{
+    margin: 0.35rem;
+    float: left;
+}
+
+
+
+/*---------------------- grid de pasaporte aceptado -----------------------*/ 
+.passports{
+    display: none;
+}
+.grid-container {
+    background-image: url(../assets/passport/plantilla-pasaporte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 15px solid #363547; 
+    border-radius: 2%;
+    overflow: hidden;
+    margin: 10%;
+    font-family: "OCR-B", monospace;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+}
+@import url('https://fonts.googleapis.com/css2?family=OCR+B&display=swap');
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8%;
+    order:-1;
+    border-right: black 1px solid;
+
+}
+.grid-item2{
+    order: 0;
+    padding: 5%;    
+}
+.grid-stamp{
+    grid-column: 2;
+    grid-row: 2 / 4;
+    border-left: black 1px solid;
+}
+.stamp {
+    margin-top: 25%;
+    max-width: 100%;
+    max-width: 100%;
+    padding: 1.5em;
+    height: auto;
+    transform: rotate(-25deg) translate(-2px);
+}
+.bold-text {
+    font-weight: bold;
+}
+
+
+/*map styling*/
+
+.map{
+    height: 50vh;
+    width: 80%;
+    pointer-events: auto;
+}
+.map.noclick{
+    pointer-events: none;
+}
+
+.map path {
+    fill: var(--primary);
+    stroke: var(--bgc);
+    stroke-width: 2px;
+    cursor: pointer;
+}
+
+.map :hover{
+    fill: var(--hover);
+}
+
+/*svg highlight*/
+
+rect{
+    fill: var(--highlight);
+    stroke: transparent;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.title{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+.text{
+    margin: 2rem 0;
+}
+/*cards*/
+
+.info-card{
+    display: none;
+}
+.card{
+    background-color: var(--bgc);
+    box-shadow: 0 0 0 100rem #0000009c;
+    position: absolute;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:0.3fr repeat(7, 2fr);
+    margin-bottom: 15%;
+    padding: 0.3rem;
+    left:10%;
+    top:18%;
+    min-width: 250px;
+    width: 80%;
+    gap: 5px;
+
+}
+.activate{
+    display: absolute;
+}
+.close{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    right: 0;
+    cursor: pointer;
+    color: black;
+    font-size: 2rem;
+    justify-content: end;
+    order: 0;
+    height: 25px;
+    width: 25px;
+    justify-self: end;
+}
+
+/*info*/
+
+h1.info{
+    order:-1;
+    grid-column: auto;
+    margin-top: 3%;
+    color: var(--primary);
+    padding: 5%;
+    grid-column: 1/3;
+}
+ul.info{
+    padding: 3%;
+    list-style-type: none;
+    gap: 0.8rem; 
+    order: 0;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    grid-column: 1/4;
+    justify-content: center;
+    align-items: center;
+}
+/*images*/
+
+.gallery{
+    width: 100%;
+    min-width: 220px;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    grid-column: 1/4;
+}
+
+
+@media (width > 770px) {
+
+/*menu*/
+
+.header .burger{
+    display: none;
+}
+.header{
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    align-items: flex-end;
+    pointer-events: auto;
+}
+.nav-list{
+    flex-direction: row;
+
+}
+.nav-list li {
+    margin: 0 .5 rem;
+}
+
+.nav-list li a:hover {
+    background-color: var(--hover);
+}
+
+/*map*/
+
+.map{
+    height: 90vh;
+    width: 49vh;
+    pointer-events: auto;
+}
+/*cards*/
+
+.card {
+    padding: 1.5rem;
+    border-radius: 1%;
+    max-width:160rem;
+    min-width: 700px;
+    left: 10%;
+    grid-template-columns:repeat(4, 3fr);
+    grid-template-rows:0.5fr 3fr 3fr;    
+    height: 90%;
+}
+.close{
+    order: 0;
+}
+h1.info{
+    order:-1;
+    padding: 0;
+    grid-column: 1/4;
+    align-self: flex-end;
+    padding-left:3% ;
+}
+ul.info{
+    align-items: start;
+    order: 0;
+    grid-row: 2/4;
+    grid-column: auto;
+    min-width: 190px;
+}
+
+.gallery{
+    aspect-ratio: 1/1;
+    grid-column: auto;
+    min-width: 150px;
+    height: auto;
+
+}
+
+
+}
+
+
 .footer{
     bottom:0;
     left: 0;
@@ -559,89 +615,6 @@ ul.info{
 
 }
 
-
-
-/*---------------------- grid de pasaporte aceptado -----------------------*/ 
-
-.grid-container {
-    position: absolute;
-    background-image: url(/assets/passport/plantilla-pasaporte.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px solid #333; /* Borde gris oscuro */
-    border-radius: 5px;
-    overflow: hidden; /* Para evitar que el contenido se desborde */
-    margin: 10%;
-}
-@import url('https://fonts.googleapis.com/css2?family=OCR+B&display=swap');
-.grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    border-right: 2px solid #000; /* Borde derecho negro */
-    font-family: "OCR-B", monospace;
-    padding: 5%;
-}
-
-.grid-item:last-child {
-    border-right: none; /* Elimina el borde derecho de la última celda */
-}
-
-.bold-text {
-    font-weight: bold;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 600px) {
-    .grid-item {
-        border-right: none; /* Elimina el borde derecho en dispositivos móviles */
-    }
-}
-
-/* Estilos para dispositivos de escritorio */
-@media screen and (min-width: 601px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-    }
-}
-
-
-.grid-container2 {
-    background-image: url(/assets/passport/plantilla-pasaporte.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px solid #333; /* Borde gris oscuro */
-    border-radius: 5px;
-    overflow: hidden; /* Para evitar que el contenido se desborde */
-    margin: 10%;
-}
-.img2{
-    max-width: 100%;
-    padding: 1.5em;
-}
-
-/* Estilos para dispositivos de escritorio */
-@media screen and (min-width: 601px) {
-    .grid-container2 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-    }
-    .img2{
-        max-width: 100%;
-        padding: 2em;
-    }
-}
 
 /* -- diseño para computadora --*/
 

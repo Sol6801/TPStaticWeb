@@ -56,34 +56,38 @@
             <input type="checkbox" value="ART">Tucumán<br>
             </div>
           
-            <button type="submit">¡Enviar al Mapa!</button>
+            <button type="submit">¡Sella tu Pasaporte!</button>
+            <button type="submit" id="map">Enviar al Mapa</button>
         </form>
-
+    <section>
         <!-- grid de pasaporte aceptado-->
-    <div class="grid-container">
+    <div class="passports" id="accepted">        
+        <button class="close">  × </button>
         <div class="grid-item">
-            <p class="bold-text">Viajero recurrente.</p>
-        </div>
-        <div class="grid-item">
+            <h1 class="bold-text">Viajero recurrente.</h1>
+            </div>
+            <div class="grid-item2">
             <p>Felicitaciones, conoces mucho del pais.</p>
         </div>
-        <div class="grid-item">
-            <img src="../assets/passport/approved.png" alt="Approved">
+        <div class="grid-stamp">
+            <img class="stamp" src="../assets/passport/approved.png" alt="Approved">
         </div>
-    </div>
+    </div> 
     
     <!-- grid de pasaporte rechazado-->
-    <div class="grid-container2">
+ <div class="passports" id="rejected">
+        <button class="close">  × </button>
         <div class="grid-item">
-            <p class="bold-text">Viajero inicial.</p>
-        </div>
-        <div class="grid-item">
-            <p>Tienes muchos lugares increibles por descubrir!!</p>
+            <h1 class="bold-text">Viajero inicial.</h1>
         </div>
         <div class="grid-item2">
-            <img class="img2" src="../assets/passport/rejected.png" alt="Rejected">
+            <p>Tienes muchos lugares increibles por descubrir!!</p>
+        </div>
+        <div class="grid-stamp">
+            <img class="stamp" src="../assets/passport/rejected.png" alt="Rejected">
         </div>
     </div>
+</section>
     </main>
     <script src="../scripts/script.js"></script>
     <script src="../scripts/form.js"></script>
