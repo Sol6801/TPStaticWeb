@@ -26,9 +26,8 @@
         </nav>
     </header>
     <main class="container">
-        <div class="content-wrap">
-        <form class="form-box">
-            <h1 class="title">Seleccioná las provincias que recorriste</h1>
+                <h1 class="title">Seleccioná las provincias que recorriste</h1>
+            <form class="form-box">
           
             <div class="provinces">
             <label><input type="checkbox" value="ARB">Buenos Aires</label><br>
@@ -59,40 +58,40 @@
           <section class="submit-buttons">
             <button type="submit" id="stamp">¡Sella tu Pasaporte!</button> <button type="submit" id="map">Enviar al Mapa</button>
           </section>
-        </form>
-        <!-- grid de pasaporte aceptado-->
-    <div class="passports" id="accepted">        
-        <button class="close">  × </button>
-        <div class="grid-item">
-            <p class="bold-text">Viajero recurrente.</p>
-            <br/>
-            <p>Felicitaciones, conoces mucho del pais.</p>
-        </div>
-        <div class="grid-stamp">
-            <img class="stamp" src="../assets/passport/approved.png" alt="Approved">
-        </div>
-    </div> 
+            </form>
+            <!-- grid de pasaporte aceptado-->
+            <div class="passports" id="accepted">        
+                <button class="close">  × </button>
+                <div class="grid-item">
+                    <p class="bold-text">Viajero recurrente.</p>
+                    <br/>
+                    <p>Felicitaciones, conoces mucho del pais.</p>
+                </div>
+                <div class="grid-stamp">
+                    <img class="stamp" src="../assets/passport/approved.png" alt="Approved">
+                </div>
+            </div> 
     
-    <!-- grid de pasaporte rechazado-->
- <div class="passports" id="rejected">
-        <button class="close">  × </button>
-        <div class="grid-item">
-            <p class="bold-text">Viajero inicial.</p>
-            <br/>
-            <p>Tienes muchos lugares increibles por descubrir!!</p>
+        <!-- grid de pasaporte rechazado-->
+            <div class="passports" id="rejected">
+                <button class="close">  × </button>
+                <div class="grid-item">
+                    <p class="bold-text">Viajero inicial.</p>
+                    <br/>
+                    <p>Tienes muchos lugares increibles por descubrir!!</p>
+                </div>
+                <div class="grid-stamp">
+                    <img class="stamp" src="../assets/passport/rejected.png" alt="Rejected">
+            </div>
         </div>
-        <div class="grid-stamp">
-            <img class="stamp" src="../assets/passport/rejected.png" alt="Rejected">
-        </div>
-    </div>
-    </div>
-</main>
+
     <footer class="footer">
         <p>© ProyectoWeb 2024 — Todos los derechos reservados</p>
         <p> Para mas informacion: 
             <a href="https://www.argentina.gob.ar/turismo/experiencias"> Experiencias argentinas para vivir </a>
         </p>
     </footer>
+</main>
     <script src="../scripts/script.js"></script>
     <script src="../scripts/form.js"></script>
 </body>
